@@ -3,7 +3,7 @@ import {View, StyleSheet, Text, SafeAreaView} from 'react-native';
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <View>
         <Text style={styles.text}>Home Screen</Text>
       </View>
@@ -12,8 +12,16 @@ const HomeScreen = () => {
 };
 
 const styles = StyleSheet.create({
+    container: {
+        padding: 10,
+        backgroundColor: '#090909',
+        flex: 1,
+
+      
+    },
     text: {
-        color: "blue"
+        color: 'white',
+        fontSize: 32,
     }
 });
 
